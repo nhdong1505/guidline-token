@@ -1,0 +1,71 @@
+.header {
+  background-color: #21222e;
+  display: flex;
+  height: 70px;
+  // align-items: center;
+  .logo-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  .logo-image{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  .name-token{
+    color:#fda32b;
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: 'Roboto,sans-serif';
+  }
+  &__search {
+    display: flex;
+    flex: 1;
+  }
+  &__logo {
+    width: 100px;
+    margin: 18px 20px 0 20px;
+  }
+  &__searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+  }
+  &__searchInput {
+    height: 12px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+  }
+  &__nav {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    // justify-content: space-evenly;
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.125rem;
+    padding: 10px;
+  }
+
+  &__optionLineOne {
+  }
+
+  &__optionLineTwo {
+    font-weight: 800;
+  }
+  &__optionBasket {
+    display: flex;
+    align-items: center;
+  }
+}
