@@ -1,27 +1,30 @@
-.home {
-  background-image: url("../imgs/bg11.png");
-  background-position: 50% 350vh;
+@import "../common/styles/styles.scss";
 
+.home {
   .pre-content {
+    background-image: url("../imgs/bg11.png");
+    background-attachment: fixed;
+    background-position: 67% -65.878553vh;
     display: flex;
     color: #ffff;
-    &__text1{
+    &__text1 {
       font-size: 2.25rem;
-      font-weight: 700;   
+      font-weight: 700;
       margin-bottom: 20px;
     }
-    &__text2{
+    &__text2 {
       font-size: 1.875rem;
-      font-weight: 700; 
+      font-weight: 700;
       margin-bottom: 20px;
     }
-    &__button{
-      background-color: #fda32b;
+    &__button {
+      background-color: $theme-token-primary;
       font-weight: 700;
       font-size: 0.875rem;
       border-radius: 5px;
       padding: 15px;
       max-width: 300px;
+      cursor: pointer;
     }
     &__left {
       width: 55%;
@@ -32,15 +35,55 @@
     &__right {
       width: 45%;
     }
-    
+
     .shiba-img {
       width: 436px;
       height: 660px;
     }
   }
 
-  .body-content{
+  .body-content {
     color: #ffff;
     padding: 70px;
+    background-color: #171822;
+    .focus {
+      // col
+      color: $theme-token-primary;
+    }
+    &__text {
+      margin: 10px 10px;
+    }
+    &--btn-group {
+      margin: 30px 0 0 0;
+      display: flex;
+      gap: 30px;
+    }
+    &--img {
+      &__buy {
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        height: 400px;
+        width: 400px;
+      }
+      &__art {
+        position: absolute;
+        top: 0;
+        right: 30px;
+        height: 200px;
+        width: 200px;
+        transform: rotate(180deg);
+      }
+    }
   }
+}
+
+.flex-row {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+}
+.flex-around {
+  justify-content: space-around;
 }

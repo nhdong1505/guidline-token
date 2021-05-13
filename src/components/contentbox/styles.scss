@@ -1,8 +1,12 @@
+@import '../../common/styles/styles.scss';
+
 .content-box {
   border-radius: 10px;
   border: 6px solid #ffff;
   padding: 60px;
   margin: 40px;
+  position: relative;
+  background-image: url('../../imgs/bg4.png');
   &__title {
     display: flex;
     align-items: center;
@@ -15,6 +19,6 @@
   &__title-screen {
     font-weight: 900;
     font-size: 6rem;
-    color: #fba23c;
+    color: $theme-token-primary;
   }
 }

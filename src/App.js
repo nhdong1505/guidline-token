@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Header from './components/header/index'
 import Home from './pages/Home'
+import './common/styles/styles.scss';
 
 function App() {
   return (

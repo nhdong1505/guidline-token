@@ -1,3 +1,5 @@
+@import '../../common/styles/theme.scss';
+
 .header {
   background-color: #21222e;
   display: flex;
@@ -15,7 +17,7 @@
     margin-right: 20px;
   }
   .name-token{
-    color:#fda32b;
+    color: $theme-token-primary;
     font-size: 2.25rem;
     font-weight: 700;
     font-family: 'Roboto,sans-serif';
@@ -31,7 +33,7 @@
   &__searchIcon {
     padding: 5px;
     height: 22px !important;
-    background-color: #cd9042;
+    background-color: $theme-token-primary;
   }
   &__searchInput {
     height: 12px;
