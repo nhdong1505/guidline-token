@@ -1,0 +1,26 @@
+@import '../../common/styles/styles.scss';
+.footer{
+    background-image: url('../../imgs/bg26.png');
+    background-attachment: fixed;
+    background-position: 67% -65.878553vh;
+    padding: 40px 200px 70px 200px;
+    .title {
+        color: $theme-token-primary;
+        font-weight: 900;
+        font-size: 6rem;
+        margin-bottom: 40px;
+        text-align: center;
+    } 
+    .content{
+        color: $theme-token-white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &--group-btn{
+        display: flex;
+        justify-content: space-around;
+    }
+    .custom-btn {
+        background-color: transparent;
+    }
+}

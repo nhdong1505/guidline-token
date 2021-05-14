@@ -9,6 +9,7 @@ import wallet from '../imgs/wallet.png'
 import Button from '../components/button'
 import shibaAu from '../imgs/shib_astronaut.png'
 import bone from '../imgs/bone_graphic.png'
+import Footer from '../components/footer'
 function Home(props) {
     const myRef = useRef(null)
     return (
@@ -123,6 +124,7 @@ Details on how to acquire this token, tokenomics and incentives will be announce
 </div>
                 </ContentBox>
             </div>
+            <Footer />
         </div >
     )
 }
