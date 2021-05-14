@@ -4,11 +4,11 @@ import './Header.scss'
 import { Link } from 'react-router-dom'
 import logoImage from '../../imgs/shib_logo_header.png'
 import RefContext from '../../common/refContext'
-
 const Header = () => {
     const refBox = useContext(RefContext);
     return (
         <nav className="header">
+            
             <div className="logo-area">
                 <img className="logo-image" src={logoImage} alt="amazon banner" width="10px" height="10px" />
                 <span className="name-token">NEMO TOKEN</span>

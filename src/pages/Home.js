@@ -1,4 +1,4 @@
-import React, {useRef , useContext} from 'react'
+import React, { useRef, useContext } from 'react'
 import PropTypes from 'prop-types'
 import './Home.scss'
 import shibaImg from '../imgs/shiba-full-img.png'
@@ -27,7 +27,7 @@ const Home = (props) => {
                         Growing 300k+ Community <br />
                         & more on the horizon!
                     </span>
-                    <button className="pre-content__button" onClick={()=>{
+                    <button className="pre-content__button" onClick={() => {
                     }} >READ OUR WOOFPAPER!</button>
                 </div>
                 <div className="pre-content__right">
@@ -37,7 +37,7 @@ const Home = (props) => {
             <div className="body-content">
                 <ContentBox title="Ecosystem" forwardedRef={refBox.ecoAreaRef} >
                     <div className="body-content__text">
-                        <span className="focus"> ⦿ SHIB </span>is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.
+                        <span className="focus"> ⦿ SHIB </span>is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Nemo token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.
 
                     We locked the 50% of the total supply to Uniswap and threw away the keys!
                     The remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so everyone has to buy on the open market, ensuring a fair and complete distribution where devs don't own team tokens they can dump on the community.
@@ -100,11 +100,11 @@ Details on how to acquire this token, tokenomics and incentives will be announce
                 <ContentBox title="ART" >
                     <div className="body-content__text" >
                         Our artist incubator invited the best artists in the Shiba Inu community to join us on a special project.
-                        <br/>
+                        <br />
                         We invite speakers from various genres and platform to speak with our new Shiba artists, build camaraderie and foster lasting relationships over a few weeks. These artists will lead the artistic Shiba movement as we explore how to bring our unique position into the NFT market.
-                        <br/>
+                        <br />
 Over 75 entrants applied and we are excited to update the community on our cohort, portfolio day and our first official NFT ventures . </div>
-                    <img src={bone} className="body-content--img__art"/>
+                    <img src={bone} className="body-content--img__art" />
                 </ContentBox>
 
                 <ContentBox title="RESCUE">

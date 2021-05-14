@@ -1,32 +1,33 @@
-@import '../../common/styles/theme.scss';
+@import "../../common/styles/theme.scss";
 
 .header {
   background-color: #21222e;
   display: flex;
   height: 70px;
   // align-items: center;
-  .logo-area{
+  .logo-area {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
-    @media screen and (max-width: $tablet){
-        width: 100%;
-        justify-content: flex-start;
-        margin-left: 20px;
-        // justify-content: space-evenly;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      justify-content: flex-start;
+      margin-left: 20px;
     }
   }
-  .logo-image{
+  .logo-image {
     width: 50px;
     height: 50px;
     margin-right: 20px;
   }
-  .name-token{
+  .name-token {
     color: $theme-token-primary;
     font-size: 2.25rem;
     font-weight: 700;
-    font-family: 'Roboto,sans-serif';
+    @media screen and (max-width: $tablet) {
+      font-size: 2rem;
+    }
   }
   &__search {
     display: flex;
@@ -54,7 +55,7 @@
     align-items: center;
     // justify-content: space-evenly;
   }
-  @media screen and (max-width: $tablet){
+  @media screen and (max-width: $tablet) {
     &__nav {
       display: none;
       // justify-content: space-evenly;

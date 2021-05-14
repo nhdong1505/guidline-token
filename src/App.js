@@ -10,7 +10,7 @@ import Home from './pages/Home'
 import './common/styles/styles.scss';
 import './App.css';
 import RefContext from './common/refContext'
-
+import DrawMenu from './components/drawerMenu'
 const App = () => {
   const ecoAreaRef = useRef(null)
   const howtoBuyRef = useRef(null)
@@ -30,6 +30,7 @@ const App = () => {
           </Route>
           <Route path="/">
             <RefContext.Provider value={{ ecoAreaRef, howtoBuyRef, swapRef }} >
+              <DrawMenu />
               <Header />
               <Home />
             </RefContext.Provider>
