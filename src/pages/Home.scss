@@ -2,11 +2,12 @@
 
 .home {
   .pre-content {
-    background-image: url("../imgs/bg11.png");
+    background-image: url("../imgs/sea_background.jpeg");
     background-attachment: fixed;
-    background-position: 67% -65.878553vh;
+    background-position: 0 0vh;
     display: flex;
-    color: #ffff;
+    padding-bottom: 40px;
+    // color: #ffff;
     @media screen and (max-width: $tablet) {
       display: flex;
       flex-direction: column;
@@ -30,6 +31,7 @@
       padding: 15px;
       max-width: 300px;
       cursor: pointer;
+      box-shadow: 2px 2px 2px 2px #242323;
     }
     &__left {
       width: 55%;
@@ -49,18 +51,19 @@
 
     .shiba-img {
       width: 436px;
-      height: 660px;
+      height: 460px;
       @media screen and (max-width: $tablet) {
         width: 218px;
-        height: 330px;
+        height: 230px;
       }
     }
   }
 
   .body-content {
-    color: #ffff;
+    // color: #ffff;
     padding: 70px;
     background-color: #171822;
+    background-color: #02012f;
     @media screen and (max-width: $tablet) {
       padding: 10px;
     }

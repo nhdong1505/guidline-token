@@ -1,8 +1,8 @@
 @import "../../common/styles/styles.scss";
 .footer {
-  background-image: url("../../imgs/bg26.png");
+  background-image: url("../../imgs/sea_background.jpeg");
   background-attachment: fixed;
-  background-position: 67% -65.878553vh;
+  // background-position: 67% -65.878553vh;
   padding: 40px 200px 70px 200px;
   @media screen and (max-width: $tablet) {
     padding: 20px 50px 20px 50px;
@@ -23,7 +23,7 @@
     }
   }
   .content {
-    color: $theme-token-white;
+    // color: $theme-token-white;
     text-align: center;
     margin-bottom: 20px;
   }

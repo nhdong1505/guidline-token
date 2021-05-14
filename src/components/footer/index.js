@@ -21,11 +21,11 @@ function Footer({ }) {
                 You can connect with us from anywhere in the world because we have international groups for foreign language speakers.
             </div>
             <div className="footer--group-btn">
-                <Button text="NEMO TELEGRAM" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #fba23c" }} />
-                <Button text="TWITTER" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #fba23c" }} />
-                <Button text="LEASH TELEGRAM" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #fba23c" }} />
-                <Button text="REDDIT" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #fba23c" }} />
-                <Button text="DISCORD" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #fba23c" }} />
+                <Button text="NEMO TELEGRAM" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #f5691e" }} />
+                <Button text="TWITTER" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #f5691e" }} />
+                <Button text="LEASH TELEGRAM" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #f5691e" }} />
+                <Button text="REDDIT" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #f5691e" }} />
+                <Button text="DISCORD" link="" styles={{ backgroundColor: 'transparent', border: "2px solid #f5691e" }} />
             </div>
 
         </div>

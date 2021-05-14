@@ -2,8 +2,9 @@ import React, { useContext } from 'react'
 
 import './Header.scss'
 import { Link } from 'react-router-dom'
-import logoImage from '../../imgs/shib_logo_header.png'
+import logoImage from '../../imgs/nemo_circle.png'
 import RefContext from '../../common/refContext'
+
 const Header = () => {
     const refBox = useContext(RefContext);
     return (

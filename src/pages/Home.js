@@ -7,11 +7,11 @@ import IconTextClick from '../components/iconTextClick'
 import uniSwap from '../imgs/uniswap_logo.png'
 import wallet from '../imgs/wallet.png'
 import Button from '../components/button'
-import shibaAu from '../imgs/shib_astronaut.png'
+import shibaAu from '../imgs/Nemo-body.png'
 import bone from '../imgs/bone_graphic.png'
 import Footer from '../components/footer'
 import RefContext from '../common/refContext'
-
+import NemoBody from '../imgs/nemo-full-body.png'
 const Home = (props) => {
     const refBox = useContext(RefContext);
     return (
@@ -23,7 +23,7 @@ const Home = (props) => {
                         that grew into a vibrant ecosystem
                     </span>
                     <span className="pre-content__text2">
-                        ShibaSwap. Fun tokens. Artist incubator.
+                        NemoSwap. Fun tokens. Artist incubator.
                         Growing 300k+ Community <br />
                         & more on the horizon!
                     </span>
@@ -31,7 +31,7 @@ const Home = (props) => {
                     }} >READ OUR WOOFPAPER!</button>
                 </div>
                 <div className="pre-content__right">
-                    <img className="shiba-img" src={shibaImg} />
+                    <img className="shiba-img" src={NemoBody} />
                 </div>
             </div>
             <div className="body-content">
@@ -53,12 +53,12 @@ With a total circulation of ONLY 100k tokens, it has the opposite appeal to Shib
 The second token incentivized on the swap offers special rewards for those who provide liquidity.
 <br /></div>
                     <div className="body-content__text">
-                        <span className="focus"> ⦿  BONE  </span> Dogecoin Killer is our next token! COMING SOON, Shiba Inu Bone, takes the power of Defi to the next level.
-Details on how to acquire this token, tokenomics and incentives will be announced with the reveal of ShibaSwap
+                        <span className="focus"> ⦿  BONE  </span> Dogecoin Killer is our next token! COMING SOON, Nemo Inu Bone, takes the power of Defi to the next level.
+Details on how to acquire this token, tokenomics and incentives will be announced with the reveal of NemoSwap
 </div>
                 </ContentBox>
 
-                <ContentBox title="HO​W TO BUY" forwardedRef={refBox.howtoBuyRef}>
+                <ContentBox title="How To Buy" forwardedRef={refBox.howtoBuyRef}>
                     <div className="body-content__text">
                         The only place to buy or sell <span className="focus"> SHIB </span> or <span className="focus">LEASH</span> safely is on Uniswap.
                         <br />
@@ -77,7 +77,7 @@ Details on how to acquire this token, tokenomics and incentives will be announce
                 </ContentBox>
 
 
-                <ContentBox title="SHIBA Swap" forwardedRef={refBox.swapRef} >
+                <ContentBox title="Nemo Swap" forwardedRef={refBox.swapRef} >
                     <div className="body-content__text" >
                         <span className="focus"> ⦿ SHIB </span>is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.
 
@@ -91,23 +91,23 @@ With a total circulation of ONLY 100k tokens, it has the opposite appeal to Shib
 The second token incentivized on the swap offers special rewards for those who provide liquidity.
 <br /></div>
                     <div className="body-content__text">
-                        <span className="focus"> ⦿  BONE  </span> Dogecoin Killer is our next token! COMING SOON, Shiba Inu Bone, takes the power of Defi to the next level.
-Details on how to acquire this token, tokenomics and incentives will be announced with the reveal of ShibaSwap
+                        <span className="focus"> ⦿  BONE  </span> Dogecoin Killer is our next token! COMING SOON, Nemo Inu Bone, takes the power of Defi to the next level.
+Details on how to acquire this token, tokenomics and incentives will be announced with the reveal of NemoSwap
 </div>
 
                 </ContentBox>
 
-                <ContentBox title="ART" >
+                <ContentBox title="Art" >
                     <div className="body-content__text" >
-                        Our artist incubator invited the best artists in the Shiba Inu community to join us on a special project.
+                        Our artist incubator invited the best artists in the Nemo Inu community to join us on a special project.
                         <br />
-                        We invite speakers from various genres and platform to speak with our new Shiba artists, build camaraderie and foster lasting relationships over a few weeks. These artists will lead the artistic Shiba movement as we explore how to bring our unique position into the NFT market.
+                        We invite speakers from various genres and platform to speak with our new Nemo artists, build camaraderie and foster lasting relationships over a few weeks. These artists will lead the artistic Shiba movement as we explore how to bring our unique position into the NFT market.
                         <br />
 Over 75 entrants applied and we are excited to update the community on our cohort, portfolio day and our first official NFT ventures . </div>
                     <img src={bone} className="body-content--img__art" />
                 </ContentBox>
 
-                <ContentBox title="RESCUE">
+                <ContentBox title="Rescue">
                     <div className="body-content__text">
                         <span className="focus"> ⦿ SHIB </span>is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.
 
@@ -120,8 +120,8 @@ With a total circulation of ONLY 100k tokens, it has the opposite appeal to Shib
 The second token incentivized on the swap offers special rewards for those who provide liquidity.
 <br /></div>
                     <div className="body-content__text">
-                        <span className="focus"> ⦿  BONE  </span> Dogecoin Killer is our next token! COMING SOON, Shiba Inu Bone, takes the power of Defi to the next level.
-Details on how to acquire this token, tokenomics and incentives will be announced with the reveal of ShibaSwap
+                        <span className="focus"> ⦿  BONE  </span> Dogecoin Killer is our next token! COMING SOON, Nemo Inu Bone, takes the power of Defi to the next level.
+Details on how to acquire this token, tokenomics and incentives will be announced with the reveal of NemoSwap
 </div>
                 </ContentBox>
             </div>

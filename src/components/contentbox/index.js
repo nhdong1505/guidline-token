@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './styles.scss';
-import shibaHead from '../../imgs/shib_logo_header.png'
+import shibaHead from '../../imgs/nemo_circle.png'
 
 const ContentBox = ({title, forwardedRef, children}) => {
     return (

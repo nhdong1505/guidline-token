@@ -64,6 +64,9 @@
   &__link {
     color: white;
     text-decoration: none;
+    :hover{
+      color: $theme-token-primary;
+    }
   }
   &__option {
     display: flex;
