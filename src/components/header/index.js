@@ -33,7 +33,7 @@ const Header = () => {
                     <div className="header__option" onClick={() => {
                         refBox.swapRef?.current.scrollIntoView({ behavior: "smooth" })
                     }}>
-                        <span className="header__optionLineTwo" >ShiBaSwap</span>
+                        <span className="header__optionLineTwo" >NemoSwap</span>
                     </div>
                 </Link>
                 <Link to="/" className="header__link">
