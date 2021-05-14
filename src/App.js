@@ -1,4 +1,4 @@
-import './App.css';
+import React, { useRef, createContext } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,8 +8,14 @@ import {
 import Header from './components/header/index'
 import Home from './pages/Home'
 import './common/styles/styles.scss';
+import './App.css';
+import RefContext from './common/refContext'
 
-function App() {
+const App = () => {
+  const ecoAreaRef = useRef(null)
+  const howtoBuyRef = useRef(null)
+  const swapRef = useRef(null)
+
   return (
     <Router>
       <div className="app">
@@ -23,8 +29,10 @@ function App() {
             </div>
           </Route>
           <Route path="/">
-            <Header />
-            <Home />
+            <RefContext.Provider value={{ ecoAreaRef, howtoBuyRef, swapRef }} >
+              <Header />
+              <Home />
+            </RefContext.Provider>
           </Route>
         </Switch>
       </div>

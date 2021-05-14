@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef , useContext} from 'react'
 import PropTypes from 'prop-types'
 import './Home.scss'
 import shibaImg from '../imgs/shiba-full-img.png'
@@ -10,8 +10,10 @@ import Button from '../components/button'
 import shibaAu from '../imgs/shib_astronaut.png'
 import bone from '../imgs/bone_graphic.png'
 import Footer from '../components/footer'
-function Home(props) {
-    const myRef = useRef(null)
+import RefContext from '../common/refContext'
+
+const Home = (props) => {
+    const refBox = useContext(RefContext);
     return (
         <div className="home">
             <div className="pre-content">
@@ -26,7 +28,6 @@ function Home(props) {
                         & more on the horizon!
                     </span>
                     <button className="pre-content__button" onClick={()=>{
-                        myRef.current.scrollIntoView({behavior: "smooth"})   
                     }} >READ OUR WOOFPAPER!</button>
                 </div>
                 <div className="pre-content__right">
@@ -34,7 +35,7 @@ function Home(props) {
                 </div>
             </div>
             <div className="body-content">
-                <ContentBox title="Ecosystem">
+                <ContentBox title="Ecosystem" forwardedRef={refBox.ecoAreaRef} >
                     <div className="body-content__text">
                         <span className="focus"> ⦿ SHIB </span>is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.
 
@@ -57,7 +58,7 @@ Details on how to acquire this token, tokenomics and incentives will be announce
 </div>
                 </ContentBox>
 
-                <ContentBox title="HO​W TO BUY">
+                <ContentBox title="HO​W TO BUY" forwardedRef={refBox.howtoBuyRef}>
                     <div className="body-content__text">
                         The only place to buy or sell <span className="focus"> SHIB </span> or <span className="focus">LEASH</span> safely is on Uniswap.
                         <br />
@@ -76,7 +77,7 @@ Details on how to acquire this token, tokenomics and incentives will be announce
                 </ContentBox>
 
 
-                <ContentBox title="SHIBA Swap">
+                <ContentBox title="SHIBA Swap" forwardedRef={refBox.swapRef} >
                     <div className="body-content__text" >
                         <span className="focus"> ⦿ SHIB </span>is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.
 
@@ -97,7 +98,7 @@ Details on how to acquire this token, tokenomics and incentives will be announce
                 </ContentBox>
 
                 <ContentBox title="ART" >
-                    <div className="body-content__text" ref={myRef}>
+                    <div className="body-content__text" >
                         Our artist incubator invited the best artists in the Shiba Inu community to join us on a special project.
                         <br/>
                         We invite speakers from various genres and platform to speak with our new Shiba artists, build camaraderie and foster lasting relationships over a few weeks. These artists will lead the artistic Shiba movement as we explore how to bring our unique position into the NFT market.
@@ -111,7 +112,7 @@ Over 75 entrants applied and we are excited to update the community on our cohor
                         <span className="focus"> ⦿ SHIB </span>is an experiment in decentralized spontaneous community building. SHIB token is our first token and allows users to hold Billions or even Trillions of them.  Nicknamed the DOGECOIN KILLER, this ERC-20 ONLY token can remain well under a penny and still outpace Dogecoin in a small amount of time (relatively speaking). Popular worldwide, and already up thousands of percent, Shiba token ($Shib) is the first cryptocurrency token to be listed and incentivized on ShibaSwap, our decentralized exchange.
 
                     We locked the 50% of the total supply to Uniswap and threw away the keys!
-                    The remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so everyone has to buy on the open market, ensuring a fair and complete distribution where devs don't own team tokens they can dump on the community.
+                    The  remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so everyone has to buy on the open market, ensuring a fair and complete distribution where devs don't own team tokens they can dump on the community.
                     </div>
                     <div className="body-content__text">
                         <span className="focus"> ⦿  LEASH  </span> was originally set to be a rebase token pegged to the price of Dogecoin. Now, it has been unleashed and will not rebase.

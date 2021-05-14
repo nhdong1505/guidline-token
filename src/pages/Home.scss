@@ -7,6 +7,10 @@
     background-position: 67% -65.878553vh;
     display: flex;
     color: #ffff;
+    @media screen and (max-width: $tablet){
+        display: flex;
+        flex-direction: column;
+    }
     &__text1 {
       font-size: 2.25rem;
       font-weight: 700;
@@ -76,6 +80,8 @@
       }
     }
   }
+
+  
 }
 
 .flex-row {

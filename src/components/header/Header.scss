@@ -41,11 +41,18 @@
     width: 100%;
     border: none;
   }
+
   &__nav {
     display: flex;
     width: 50%;
     align-items: center;
     // justify-content: space-evenly;
+  }
+  @media screen and (max-width: $tablet){
+    &__nav {
+      display: none;
+      // justify-content: space-evenly;
+    }
   }
   &__link {
     color: white;
