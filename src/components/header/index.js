@@ -10,7 +10,7 @@ function Header() {
         <nav className="header">
             <div className="logo-area">
                 <img className="logo-image" src={logoImage} alt="amazon banner"  width="10px" height="10px"/>
-                <span className="name-token">SHIBA TOKEN</span>
+                <span className="name-token">NEMO TOKEN</span>
             </div>
             <div className="header__nav" >
                 <Link to="/" className="header__link">
