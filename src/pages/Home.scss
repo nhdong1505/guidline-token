@@ -7,9 +7,10 @@
     background-position: 67% -65.878553vh;
     display: flex;
     color: #ffff;
-    @media screen and (max-width: $tablet){
-        display: flex;
-        flex-direction: column;
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     &__text1 {
       font-size: 2.25rem;
@@ -35,14 +36,24 @@
       display: flex;
       flex-direction: column;
       padding: 150px 0 0 250px;
+      @media screen and (max-width: $tablet) {
+        padding: 0 30px 0 0;
+      }
     }
     &__right {
       width: 45%;
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+      }
     }
 
     .shiba-img {
       width: 436px;
       height: 660px;
+      @media screen and (max-width: $tablet) {
+        width: 218px;
+        height: 330px;
+      }
     }
   }
 
@@ -50,6 +61,9 @@
     color: #ffff;
     padding: 70px;
     background-color: #171822;
+    @media screen and (max-width: $tablet) {
+      padding: 10px;
+    }
     .focus {
       // col
       color: $theme-token-primary;
@@ -69,6 +83,13 @@
         right: 10px;
         height: 400px;
         width: 400px;
+        @media screen and (max-width: $tablet) {
+          position: initial;
+          height: 200px;
+          width: 200px;
+          margin-top: 20px;
+          margin-bottom: -20px;
+        }
       }
       &__art {
         position: absolute;
@@ -77,15 +98,22 @@
         height: 200px;
         width: 200px;
         transform: rotate(180deg);
+        @media screen and (max-width: $tablet) {
+          position: absolute;
+          height: 70px;
+          width: 70px;
+        }
       }
     }
   }
-
-  
 }
 
-.flex-row {
+.flex {
   display: flex;
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .flex-center {
   justify-content: center;

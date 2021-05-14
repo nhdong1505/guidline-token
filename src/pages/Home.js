@@ -42,7 +42,7 @@ const Home = (props) => {
                     We locked the 50% of the total supply to Uniswap and threw away the keys!
                     The remaining 50% was burned to Vitalik Buterin and we were the first project following this path, so everyone has to buy on the open market, ensuring a fair and complete distribution where devs don't own team tokens they can dump on the community.
                     </div>
-                    <div className="body-content__text flex-row flex-around">
+                    <div className="body-content__text flex flex-around">
                         <IconTextClick text="Liquidity Locked to Uniswap" imageUrl={uniSwap} link="https://testnet.bscscan.com/address/0xf85072dad39e5fa4b6d872aacdccd87a282bfe21" />
                         <IconTextClick text="First burn to VB" imageUrl={wallet} link="https://testnet.bscscan.com/address/0xf85072dad39e5fa4b6d872aacdccd87a282bfe21" />
                         <IconTextClick text="Sencond burn to VB" imageUrl={wallet} link="https://testnet.bscscan.com/address/0xf85072dad39e5fa4b6d872aacdccd87a282bfe21" />
